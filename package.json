@@ -1,0 +1,34 @@
+{
+  "name": "crypto-heatmap",
+  "version": "1.0.0",
+  "description": "Monitor del comportamiento de las criptomonedas listadas en Futuros de Binance, empleando para ello un filtrado específico para la aplicación de una estrategia de Scalping.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joycer182/crypto-heatmap.git"
+  },
+  "keywords": [
+    "heatmap",
+    "crypto",
+    "criptomonedas",
+    "binance",
+    "futuros",
+    "scalping",
+    "grafana"
+  ],
+  "author": "Jose Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joycer182/crypto-heatmap/issues"
+  },
+  "homepage": "https://github.com/Joycer182/crypto-heatmap#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "es6-promise": "^4.2.8",
+    "mysql2": "^2.3.3"
+  }
+}
