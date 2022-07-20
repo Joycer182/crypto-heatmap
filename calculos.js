@@ -19,6 +19,8 @@ const LimiteEstudio = 30;
 // Contendrá la informacion que será registrada y actualizada en la Base de Datos. Es un Objeto Json.
 let InformacionParaRegistrarBD = [];
 
+export const ProcesarTODO = async () => {
+
 //(async () => {
 
     console.time('Duracion del Ciclo');
@@ -235,6 +237,8 @@ let InformacionParaRegistrarBD = [];
 
     // Finalización del Proceso
     console.log("Fin del Proceso asíncrono.");
-    process.exit(0);
+    // process.exit(0);
 
+    return [];
+};
 //})();
