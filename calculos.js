@@ -140,6 +140,11 @@ export const ProcesarTODO = async () => {
 
             // Calculo de la variación porcentual del Precio de los últimos LimiteEstudio minutos.
             let VariacionPorcentual = Math.abs( ( ( InfoMonedaListada.price - ReferenciaPrecio ) / InfoMonedaListada.price ) * 100 );
+            if ( ( InfoMonedaListada.price - ReferenciaPrecio ) < 0 ) {
+                SentidoMovimiento = 0; // Bajista.
+            } else {
+                SentidoMovimiento = 1; // Alcista.
+            };
 
             // Extrae el simbolo de la Moneda en Estudio, sin la terminación USDT o BUSD.
             let SimboloMoneda = InfoMonedaListada.symbol.slice(0,-4).toLowerCase();
